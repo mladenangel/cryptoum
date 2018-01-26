@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block stript %}
+<script type="text/javascript">
+    Stripe.setPublishableKey('{{ publishKey }}');
+function stripeResponseHandler(status,response){
+var $form = $('#paymant-form');
+if (response.error) {
+	$form.find('.paymant-errors').text(response.error.message);
+	$form.find('.submit').prop('disabled', false);
+} else { 
+	var token=response.id;
+	$form.append($('<input type="hidden" name="stripeToken">').val(token));
+	$form.get(0).submit();}};
+    </script>
+{% endblock %}
+{% block jquery %}
+$(function() {
+	var $form = $('#paymant-form');
+	$form.submit(function(event) {
+	$form.find('.submit').prop('disabled', true);
+	Stripe.card.createToken($form, stripeResponseHandler);
+	return false;
+	});	
+});
+{% endblock %}
+
+{% block content %}
+<div class='col-sm-6 col-sm-offset-3'>
+
+
+<form action="" method="POST">{% csrf_token %}
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_rqcDVk3U1CWjj5nRFTWdoBWr"
+    data-amount="999"
+    data-name="deLWin"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto"
+    data-zip-code="true"
+    data-currency="eur">
+  </script>
+</form>
+
+  <footer>
+      <ul class="list-inline">
+      <li><a href="https://www.facebook.com/mladen.angelov.165">Facebook</a></li>
+      <li><a href="https://www.youtube.com/channel/UCAx4nmhI7S1RcPiaG-Uw0tg">YouTube</a></li>
+      <li><a href="https://www.instagram.com/mladenangelov/">Instagram</a></li>
+      <li><a href="https://stackoverflow.com/users/story/8174083">Sys admin</a></li>
+      <li><a href="https://github.com/mladenangel/my_django_web">GitHub</a></li>
+      <li><a href="cv.pdf">CV</a></li>
+        </ul>
+
+        <p>&copy; Copyright 2017 Mladen Angelov</p>
+    </center>
+    </footer>
+</div>
+ 
+{% endblock %}
+
+
