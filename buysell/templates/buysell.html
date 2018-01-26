@@ -1,0 +1,362 @@
+{% extends "app/base_site.html" %}
+
+{% block title %} Dashboard {% endblock title %}
+
+{% block stylesheets %}
+  {{ block.super }}
+{% endblock stylesheets %}
+
+{% block content %}
+
+<!-- /top navigation -->
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-md-7 col-sm-12 col-xs-12 text-center">
+
+
+                <ul class="nav nav-tabs buysell">
+                  <li class="active"><a data-toggle="tab" href="#buy" class="blue"><h3>Buy</h3> <span class="pe-7s-angle-up"></span></a></li>
+                  <li><a data-toggle="tab" href="#sell" class="blue"><h3>Sell</h3> <span class="pe-7s-angle-down"></span></a></li>
+                </ul>
+
+                <div class="tab-content buypanel">
+
+                  <div id="buy" class="tab-pane fade in active">
+
+
+                    <div class="wrapper">
+                      <div class="row">
+                       <div class="panel panel-default">
+  <div class="panel-body">
+                         
+                          <div id="img-coin">
+                            <img class="img-responsive" src="http://cryptoum.com/eng/images/buysell/bitcoin.png" align="center"> <h1 class="coinvalue"><b>BTC <span class="green">4.004,34€<span class="pe-7s-angle-up pe-2x animarrow" style=""></span></span></b></h1>
+                          </div>
+
+</div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-xs-12 col-sm-9 text-left no-padding">
+
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-left">
+
+                          <h3>Payment method</h3>
+<hr>
+                          <br>                          <p>Select a currency from the dropdown below.</p>
+
+
+                          <div class="dropdown">
+                            <span style="font-weight:bold;">I want to buy</span>&nbsp;
+                            <button class="btn btn-default dropdown-toggle typetoogle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Select coin type
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu typetoogle2" aria-labelledby="dropdownMenu1">
+                              <li><a href="#">Bitcoin</a></li>
+                              <li><a href="#">Ethereum</a></li>
+                              <li><a href="#">Dash Coin</a></li> </ul>
+                          </div>
+
+
+
+                         
+                        </div>
+                      </div>
+
+                      <br><br><br>
+                          <div class="row paymentm">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                              <div class="row" style="margin-top:5px;">
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                  <span class="pe-7s-cash pe-4x pe-va blue6"></span>
+                                </div>
+                                <div class="no-padding-mb col-md-10 col-sm-10 col-xs-12 paytxt blue1">
+                              
+
+                                  <div class="instantlabel">
+                                   
+                                  </div>
+                                </div>
+
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <br> <br>
+                      <h3 class="text-left">Amount</h3>
+                      <br>
+                      <div class="row">
+                        <div class="col-md-5 col-sm-12 col-xs-12 text-left">
+
+                          <div class="form-group">
+                            <div class="input-group">
+                              <input class="form-control" placeholder="" aria-describedby="basic-addon2" type="text">
+                              <span id="basic-addon2" class="input-group-addon" style="background-color: rgb(255, 255, 255); color: rgba(0, 0, 0,0.7);">EUR</span>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 text-center">
+                          <span class="pe-7s-refresh-2 pe-3x pe-va"></span>
+                        </div>
+                        <div class="col-md-5 col-sm-12 col-xs-12 text-left">
+
+                          <div class="form-group">
+                            <div class="input-group">
+                              <input class="form-control" placeholder="" aria-describedby="basic-addon2" type="text">
+                              <span id="basic-addon2" class="input-group-addon currencytype" style="background-color: rgb(255, 255, 255); rgba(0, 0, 0,0.7);">BTC</span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  <div id="sell" class="tab-pane fade">
+                    <div class="wrapper">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-4 no-padding">
+                          <div id="img-coin">
+                            <img class="img-responsive" src="http://cryptoum.com/eng/images/buysell/bitcoin.png">
+                          </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-xs-12 col-sm-9 text-left no-padding">
+                          <p>Select a currency from the dropdown below.</p>
+
+
+                          <div class="dropdown">
+                            <span style="font-weight:bold;">I want to sell</span>&nbsp;
+                            <button class="btn btn-default dropdown-toggle typetoogle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              Select coin type
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu typetoogle2" aria-labelledby="dropdownMenu1">
+                              <li><a href="#">Bitcoin</a></li>
+                              <li><a href="#">Ethereum</a></li>
+                              <li><a href="#">Dash Coin</a></li> </ul>
+                          </div>
+
+                          <h1 class="coinvalue"><b>BTC <span class="green">4.004,34€<span class="pe-7s-angle-up pe-2x animarrow" style=""></span></span></b></h1>
+                        </div>
+                      </div>
+
+                      <br><br><br>
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-left">
+
+                          <h3>Available funds</h3>
+
+                          <br>
+                          <div class="row paymentm">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                              <div class="row" style="margin-top:5px;">
+                                <div class="col-md-2 col-sm-2 col-xs-12">
+                                  <span class="pe-7s-cash pe-4x pe-va blue6"></span>
+                                </div>
+                                <div class="no-padding-mb col-md-10 col-sm-10 col-xs-12 paytxt blue1">
+                                  <h4 class="blue6" style="text-transform: uppercase; font-size:15px;"><span class="cointype">Bitcoin</span> wallet funds<br><span class="blue1" style="font-size:20px">0,0003456 BTC</span></h4>
+
+
+                                  <div class="instantlabel">
+                                    <h3>INSTANT TRANSFER&nbsp;&nbsp;<span class="pe-7s-gleam pe-lg pe-va" ></span></h3>
+                                  </div>
+                                </div>
+
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <br> <br>
+                      <h3 class="text-left">Amount</h3>
+                      <br>
+                      <div class="row">
+                        <div class="col-md-5 col-sm-12 col-xs-12 text-left">
+
+                          <div class="form-group">
+                            <div class="input-group">
+                              <input class="form-control" placeholder="" aria-describedby="basic-addon2" type="text">
+                              <span id="basic-addon2" class="input-group-addon" style="background-color: rgb(255, 255, 255); color: rgba(0, 0, 0,0.7);">BTC</span>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12 text-center">
+                          <span class="pe-7s-refresh-2 pe-3x pe-va"></span>
+                        </div>
+                        <div class="col-md-5 col-sm-12 col-xs-12 text-left">
+
+                          <div class="form-group">
+                            <div class="input-group">
+                              <input class="form-control" placeholder="" aria-describedby="basic-addon2" type="text">
+                              <span id="basic-addon2" class="input-group-addon" style="background-color: rgba(255, 255, 255,1);">EUR</span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center zigzag"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center proceed">
+                  <div class="wrapper">
+                    <div class="row">
+                      <h3><span class="txtbuysell2">Buy</span> <span class="cointype">COIN TYPE</span> for <span class="amount">XX</span>€ <span class="pe-7s-angle-right-circle pe-lg pe-va"></span> </h3>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+
+              <div class="col-md-5 col-sm-12 hidden-xs text-center recipepanel">
+                <div class="wrapper">
+                  <div class="row">
+
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <h3 class="blue6">currently <span class="txtbuysell">buying</span></h3>
+                      <h1 class="blue1">0,00000334 BTC</h1>
+                      <h3 class="blue6">bitcoin</h3>
+
+
+                      <br><br>
+                      <div class="row">
+                        <div class="col-md-2 col-md-offset-1 col-sm-12 col-xs-12 text-center">
+                          <span class="pe-7s-cash pe-4x pe-va blue6"></span>
+                        </div>
+
+                        <div class="col-md-8 col-md-offset-1 col-sm-12 col-xs-12 text-left">
+                          <h4 class="blue6">Amount to convert<br>
+                            <span class="blue1">123,45€</span></h4>
+                        </div>
+                      </div>
+
+                      <hr class="dashedline">
+
+                      <div class="row">
+                        <div class="col-md-2 col-md-offset-1 col-sm-12 col-xs-12 text-center">
+                          <span class="pe-7s-wallet pe-4x pe-va blue6"></span>
+                        </div>
+
+                        <div class="col-md-8 col-md-offset-1 col-sm-12 col-xs-12 text-left">
+                          <h4 class="blue6">funds deposited to<br>
+                            <span class="blue1">BTC Wallet</span></h4>
+                        </div>
+                      </div>
+
+                      <hr class="solidline">
+
+                      <br>
+                      <div class="summary">
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="main">
+                              <span class="left blue8 subtotal">Fee&nbsp;<span class="blue6">5%&nbsp;&nbsp;&nbsp;&nbsp;</span></span> <span class="right blue8 subtotal">3,45€</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <br><br>
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="main">
+                              <span class="left blue8 subtotal">Sub Total&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="right blue8 subtotal">123,45€</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <br><br>
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="main">
+                              <span class="left blue1 total">Total&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="right blue1 total">126,90€</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- /page content -->
+{% endblock content %}
+
+
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="http://cryptoum.com/eng/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="http://cryptoum.com/eng/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- main js -->
+    <script src="http://cryptoum.com/eng/js/buycoins.js"></script>
+    <!-- FastClick -->
+    <script src="http://cryptoum.com/eng/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="http://cryptoum.com/eng/build/js/custom.min.js"></script>
+    <!-- NProgress -->
+    <script src="http://cryptoum.com/eng/vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="http://cryptoum.com/eng/vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="http://cryptoum.com/eng/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- Flot -->
+    <script src="http://cryptoum.com/eng/vendors/Flot/jquery.flot.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="http://cryptoum.com/eng/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="http://cryptoum.com/eng/vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="http://cryptoum.com/eng/vendors/moment/min/moment.min.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+
+    <script type="text/javascript" src="http://cryptoum.com/eng/js/profile.js"></script>
+
+
