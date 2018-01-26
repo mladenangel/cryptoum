@@ -1,0 +1,814 @@
+{% load staticfiles 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Criptoum&trade;</title>
+
+<!-- Bootstrap -->
+<link href="http://cryptoum.com/eng/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="http://cryptoum.com/eng/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- NProgress -->
+<link href="http://cryptoum.com/eng/vendors/nprogress/nprogress.css" rel="stylesheet">
+<!-- bootstrap-daterangepicker -->
+<link href="http://cryptoum.com/eng/vendors/bootstrap-daterangepicker/daterangepicker.css rel="stylesheet">
+
+<!-- Custom Theme Style -->
+<link href="http://cryptoum.com/eng/build/css/custom.min.css" rel="stylesheet">
+<link href="http://cryptoum.com/eng/build/css/general.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+
+<!-- Icons -->
+<link rel="stylesheet" href="http://cryptoum.com/eng/images/Icon-font-7-stroke/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+<link rel="stylesheet" href="http://cryptoum.com/eng/images/Icon-font-7-stroke/pe-icon-7-stroke/css/helper.css"> 
+   <link href="http://cryptoum.com/eng/css/instabeat.css" rel="stylesheet">
+    <link href="https://raw.githubusercontent.com/noraesae/perfect-scrollbar/master/docs/perfect-scrollbar.min.css" rel="stylesheet">
+  <style>
+    nav_menu {
+    float: left;
+    background: black;
+    border-bottom: 0px solid #D9DEE4;
+    margin-bottom: 0px;
+    width: 100%;
+    position: relative;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    color: #73879C;
+    font-family: 'Muli', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.471;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+html {
+    font-size: 10px;
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+  </style>
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col menu_fixed mCustomScrollbar _mCS_1 mCS-autoHide">
+          <div class="left_col scroll-view" style="background-color:#0b1328;">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="" class="site_title">
+                <i class="fa">
+                  <img src="http://cryptoum.com/eng/images/icon_logo.svg" alt="icon logo"/></i>
+                <span>
+                  <img src="http://cryptoum.com/eng/images/text_logo.svg" alt="logo text">
+                </span>
+              </a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix" style="background-color:#0b1328;">
+              <div class="profile_pic">
+                <img src="http://localhost:8000/static/user.png" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span style="color:white;">Welcome,</span>
+                <h2>{{ user }} </h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu" style="background-color:#0b1328;">
+  <div class="menu_section">
+    <ul class="nav side-menu">
+      
+      <li><a href=""><i class="pe-7s-home pe-2x pe-va"></i>Dashboard</a></li>
+      <li><a href="{% url 'dashboard' %}"><i class="pe-7s-stopwatch pe-2x pe-va"></i>Buy / Sell</a></li>
+      
+      <!--li>
+        <a href="#" onclick="return false;"><i class="fa fa-area-chart"></i> Insta Beat</a>
+        <ul class="nav child_menu">
+          <li class="current-page"><a href="#">test</a></li>
+          <li><a href="index2.html">Open Trades</a></li>
+          <li><a href="index3.html">Closed Trades</a></li>
+        </ul>
+      </li-->
+      <li><a href="http://localhost:8000/buysell"><i class="pe-7s-graph1 pe-2x pe-va"></i>Buy / Sell Short</a></li>
+      <li><a href="http://localhost:8000/tools"><i class="pe-7s-credit pe-2x pe-va"></i>Tools</a></li>
+      <li><a href="http://localhost:8000/app"><i class="pe-7s-cash pe-2x pe-va"></i>Charts</a></li>
+      <li><a href="http://localhost:8000/setting"><i class="pe-7s-help2 pe-2x pe-va"></i>Settings</a></li>
+      <li><a href="http://localhost:8000/contact"><i class="pe-7s-bookmarks pe-2x pe-va"></i>Help & Support</a></li>
+
+    </ul>
+  </div>
+
+</div>
+<!-- /sidebar menu -->
+
+<!-- /menu footer buttons -->
+<div class="sidebar-footer hidden-small">
+  <a data-toggle="tooltip" data-placement="top" title="Dashboard" href="http://localhost:8000/dashboard"">
+    <span class="pe-7s-home" aria-hidden="true"></span>
+  </a>
+  <a data-toggle="tooltip" data-placement="top" title="Instabeat" href="http://localhost:8000/buysell">
+    <span class="pe-7s-stopwatch" aria-hidden="true"></span>
+  </a>
+  <a data-toggle="tooltip" data-placement="top" title="Withdraw Money" href="http://localhost:8000/buysell">
+    <span class="pe-7s-cash" aria-hidden="true"></span>
+  </a>
+  <a data-toggle="tooltip" data-placement="top" title="Logout" href="http://localhost:8000/accounts/logout>
+    <span class="pe-7s-back" aria-hidden="true"></span>
+  </a>
+</div>
+
+
+<!-- /menu footer buttons -->
+
+          </div>
+        </div>
+
+        <!-- top navigation -->
+<div class="top_nav" >
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding no-margin" style="background-color:#124fdd;">
+    <div class="nav_menu" style="background-color:#124fdd;">
+
+
+      <nav style="background-color:#124fdd;">
+        <div class="nav toggle" style="background-color:#124fdd;">
+          <a id="menu_toggle"><i class="pe-7s-menu pe-lg pe-va" style="font-size:31px; color:#455a64;"></i></a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right" style="background-color:#124fdd;">
+          <li class="">
+
+          </li>
+          <li class="">
+            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <img src="images/user.png" alt="">{{ user }}              <span class=" fa fa-angle-down"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-usermenu pull-right" style="background-color:#124fdd;">
+              <li><a href="profile.php"><i class="pe-7s-id pull-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;My Profile</a></li>
+              <li><a href="support.php"><i class="pe-7s-help2 pull-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;Support</a></li>
+              <li><a href="login.php"><i class="pe-7s-back pull-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;Log Out</a></li>
+            </ul>
+          </li>
+
+          <li role="presentation" class="dropdown">
+            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false" style="height:57px; min-width:50px;">
+              <span class="pe-7s-mail" style="font-size: 30px; line-height: 0px; position:absolute; top:29px; right:15px;"></span>
+              <span class="badge bg-purple">6</span>
+            </a>
+
+            <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+              <li>
+                <a>
+                  <span class="image"><img src="https://localhost:8000/static/user.png" alt="Profile Image" /></span>
+                  <span>
+                    <span>John Smith</span>
+                    <span class="time">3 mins ago</span>
+                  </span>
+                  <span class="message">
+                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="image"><img src="https://localhost:8000/static/user.png" alt="Profile Image" /></span>
+                  <span>
+                    <span>John Smith</span>
+                    <span class="time">3 mins ago</span>
+                  </span>
+                  <span class="message">
+                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                  <span>
+                    <span>John Smith</span>
+                    <span class="time">3 mins ago</span>
+                  </span>
+                  <span class="message">
+                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="image"><img src="https://localhost:8000/static/user.png" alt="Profile Image" /></span>
+                  <span>
+                    <span>John Smith</span>
+                    <span class="time">3 mins ago</span>
+                  </span>
+                  <span class="message">
+                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                  </span>
+                </a>
+              </li>
+              <li>
+                <div class="text-center">
+                  <a>
+                    <strong>See All Alerts</strong>
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <p class="balance-top hidden-xs" style="background-color:#124fdd;">
+              <span>Balance</span><br/>
+              0&euro;
+            </p>
+          </li>
+        </ul>
+
+
+      </nav>
+
+
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-sm hidden-md hidden-lg no-padding">
+    <div class="balance-mb">
+      <div class="col-xs-4 col-sm-3" style="background-color: white;">
+        <h5 style="text-transform:uppercase; letter-spacing:2px;"><b>Balance</b></h5>
+      </div>
+      <div class="col-xs-8 col-sm-9 cornershadow" style="background-color: white;">
+        <h5>0&euro;</h5> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /top navigation -->
+        <!-- page content -->
+        <div class="right_col" role="main">
+
+          <div class="modal fade" id="buy-md" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="vertical-alignment-helper">
+              <div class="modal-dialog vertical-align-center">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <h1><b class="green">Buy</b> <span class="crypto">BTC</span> for <span class="value green">4.003,57€&nbsp;<i class="pe-7s-angle-up pe-2x pe-va"></i></span></h1>
+                    <hr>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h5>Input below the buy limit and it's amount.</h5>
+                        <br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: #f7f7f7; border-radius: 6px; padding:13px 10px;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="dropdown">
+                        <span style="font-weight:bold; color:black;">Bet duration:</span>&nbsp;
+                        <button class="btn btn-default dropdown-toggle typetoogle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Select time span
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu typetoogle2" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">1 min.</a></li>
+                          <li><a href="#">5 min.</a></li> 
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="input-group" style="margin-bottom: 0px;">
+                        <input class="form-control" placeholder="" aria-describedby="basic-addon2" type="text">
+                        <span id="basic-addon2" class="input-group-addon" style="background-color: rgb(255, 255, 255); color: rgba(0, 0, 0,0.7);">EUR</span>
+                      </div>
+                    </div>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal fade" id="sell-md" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="vertical-alignment-helper">
+              <div class="modal-dialog vertical-align-center">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <h1><b class="red">Sell</b> <span class="crypto">BTC</span> for <span class="value green">4.003,57€&nbsp;<i class="pe-7s-angle-up pe-2x pe-va"></i></span></h1>
+                    <hr>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h5>Input below the buy limit and it's amount.</h5>
+                        <br>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: #f7f7f7; border-radius: 6px; padding:13px 10px;">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="dropdown">
+                        <span style="font-weight:bold; color:black;">Bet duration:</span>&nbsp;
+                        <button class="btn btn-default dropdown-toggle typetoogle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Select time span
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu typetoogle2" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">1 min.</a></li>
+                          <li><a href="#">5 min.</a></li> 
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="input-group" style="margin-bottom: 0px;">
+                        <input class="form-control" placeholder="" aria-describedby="basic-addon2" type="text">
+                        <span id="basic-addon2" class="input-group-addon" style="background-color: rgb(255, 255, 255); color: rgba(0, 0, 0,0.7);">EUR</span>
+                      </div>
+                    </div>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--<div class="">
+
+            <div id="cryptocurrency-banner">
+
+              <div>
+                <span>BTC</span>
+                <span>4.004,34€</span>
+              </div>
+              <div>
+                <span>ETH</span>
+                <span>204,34€</span>
+              </div>
+              <div>
+                <span>LTC</span>
+                <span>44,34€</span>
+              </div>
+
+            </div>
+
+          </div>-->
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div id="container-chart" crypto="BTC" style="height: 400px; overflow: hidden; min-width: 310px"></div>
+
+          </div>
+
+          <div id="buysell-container">
+            <div id="stat" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <span class="left">BTC</span>
+              <span class="right green">4.004,34&euro; <span class="pe-7s-angle-up pe-lg animarrow green" style=""></span></span>
+            </div>
+            <div id="buy" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <p><span class="green"><b>Buy</b></span> <span class="crypto">BTC</span> for <span class="value">4.003,57&euro;</span></p>
+              <button class="btn btn-success buy" data-toggle="modal" data-target="#buy-md">Buy <i class="pe-7s-angle-up pe-2x pe-va"></i></button>
+            </div>
+            <div id="sell" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <p><span class="red"><b>Sell</b></span> <span class="crypto">BTC</span> for <span class="value">4.002,57&euro;</span></p>
+              <button class="btn btn-danger sell" data-toggle="modal" data-target="#sell-md">Sell <i class="pe-7s-angle-down pe-2x pe-va"></i></button>
+            </div>
+          </div>
+
+          <div class="row no-margin">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-lg hidden-md" id="gradient"></div>  
+          </div>
+
+
+          <div class="row no-margin">
+
+            <div id="choose-crypto"  class="col-xs-12 col-sm-12 col-md-4 col-lg-4 no-padding">
+              <p><i class="pe-7s-angle-down pe-2x pe-va"></i>Select an asset from the list below<i class="pe-7s-angle-down pe-2x pe-va"></i></p>
+
+              <div id="assets-list">
+                <div class="asset active">
+                  <img src="images/instabeat/bitcoin.png" />
+                  <p class="left-text">Bitcoin</p>
+                  <p class="right-text lblprice">
+                    current price<br/>
+                    <span>4.004.55€</span>
+                  </p>
+                </div>
+
+                <hr class="hr-divider" />
+
+                <div class="asset">
+                  <img src="images/instabeat/bitcoin.png" />
+                  <p class="left-text">Litecoin</p>
+                  <p class="right-text lblprice">
+                    current price<br/>
+                    <span>45.55€</span>
+                  </p>
+                </div>
+
+                <hr class="hr-divider" />
+
+                <div class="asset">
+                  <img src="images/instabeat/bitcoin.png" />
+                  <p class="left-text">Litecoin</p>
+                  <p class="right-text lblprice">
+                    current price<br/>
+                    <span>45.55€</span>
+                  </p>
+                </div>
+
+                <hr class="hr-divider" />
+
+                <div class="asset">
+                  <img src="images/instabeat/bitcoin.png" />
+                  <p class="left-text">Litecoin</p>
+                  <p class="right-text lblprice">
+                    current price<br/>
+                    <span>45.55€</span>
+                  </p>
+                </div>
+
+                <hr class="hr-divider" />
+
+                <div class="asset">
+                  <img src="images/instabeat/bitcoin.png" />
+                  <p class="left-text">Litecoin</p>
+                  <p class="right-text lblprice">
+                    current price<br/>
+                    <span>45.55€</span>
+                  </p>
+                </div>
+
+                <hr class="hr-divider" />
+
+                <div class="asset">
+                  <img src="images/instabeat/bitcoin.png" />
+                  <p class="left-text">Litecoin</p>
+                  <p class="right-text lblprice">
+                    current price<br/>
+                    <span>45.55€</span>
+                  </p>
+                </div>
+
+                <hr class="hr-divider" />
+
+                <div class="asset">
+                  <img src="images/instabeat/bitcoin.png" />
+                  <p class="left-text">Litecoin</p>
+                  <p class="right-text lblprice">
+                    current price<br/>
+                    <span>45.55€</span>
+                  </p>
+                </div>
+
+                <hr class="hr-divider" />
+
+                <div class="asset">
+                  <img src="images/instabeat/bitcoin.png" />
+                  <p class="left-text">Litecoin</p>
+                  <p class="right-text lblprice">
+                    current price<br/>
+                    <span>45.55€</span>
+                  </p>
+                </div>
+
+
+              </div>
+            </div>
+
+            
+            <div id="trades-div" class="col-xs-12 col-sm-12 col-md-8 col-lg-8 no-padding">
+
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+                <!-- Nav tabs --><div class="card">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#openTrades" aria-controls="openTrades" role="tab" data-toggle="tab">Open Trades</a></li>
+                    <li role="presentation"><a href="#recentTrades" aria-controls="recentTrades" role="tab" data-toggle="tab">Recent Trades</a></li>
+                    <li role="presentation"><a href="#allTrades" aria-controls="allTrades" role="tab" data-toggle="tab">All Trades</a></li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="openTrades">
+
+                      <table id="table-openTrades" class="table table-responsive table-condensed table-hover" style="border:0px;">
+                        <tr style="border-top:0px;">
+                          <th>Asset</th>
+                          <th>Type</th>
+                          <th>Amount</th>
+                          <th>Entry Date</th>
+                          <th>Expiration Date</th>
+                          <th>Status</th>
+                        </tr>
+                                                    <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                            
+                      </table>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="recentTrades">
+                      <table id="table-openTrades" class="table table-responsive table-condensed table-hover">
+                        <tr>
+                          <th>Asset</th>
+                          <th>Type</th>
+                          <th>Amount</th>
+                          <th>Entry Date</th>
+                          <th>Expiration Date</th>
+                          <th>Status</th>
+                        </tr>
+                                                    <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                            
+                      </table>  
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="allTrades">
+                      <table id="table-openTrades" class="table table-responsive table-condensed table-hover">
+                        <tr>
+                          <th>Asset</th>
+                          <th>Type</th>
+                          <th>Amount</th>
+                          <th>Entry Date</th>
+                          <th>Expiration Date</th>
+                          <th>Status</th>
+                        </tr>
+                                                    <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                                                        <tr class="data">
+                              <td>Bitcoin</td>
+                              <td><span>Buy</span></td>
+                              <td>15&euro;</td>
+                              <td>2017-09-10 12:46:21</td>
+                              <td>2017-09-10 12:51:21</td>
+                              <td><span>23%</span></td>
+                            </tr>
+                           <!-- footer content -->
+<footer>
+  <div class="pull-right">
+    Cryptoum 2018 &copy; All rights reserved
+  </div>
+  <div class="clearfix"></div>
+</footer>
+<!-- /footer content -->      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cryptoum.com/eng/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cryptoum.com/eng/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="https://cryptoum.com/eng/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="https://cryptoum.com/eng/vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cryptoum.com/eng/vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="https://cryptoum.com/eng/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- Flot -->
+    <script src="https://cryptoum.com/eng/vendors/Flot/jquery.flot.js"></script>
+    <script src="https://cryptoum.com/eng/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="https://cryptoum.com/eng/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="https://cryptoum.com/eng/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="vendors/moment/min/moment.min.js"></script>
+    <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom2.min.js"></script>
+  </body>
+</html>

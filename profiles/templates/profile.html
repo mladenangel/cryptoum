@@ -1,0 +1,301 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Criptoum&trade;</title>
+
+<!-- Bootstrap -->
+<link href="https://cryptoum.com/eng/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cryptoum.com/eng/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<!-- NProgress -->
+<link href="https://cryptoum.com/eng/vendors/nprogress/nprogress.css" rel="stylesheet">
+<!-- bootstrap-daterangepicker -->
+<link href="https://cryptoum.com/eng/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+<!-- Custom Theme Style -->
+<link href="https://cryptoum.com/eng/build/css/custom.min.css" rel="stylesheet">
+<link href="https://cryptoum.com/eng/build/css/general.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cryptoum.com/eng/images/Icon-font-7-stroke/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+<link rel="stylesheet" href="https://cryptoum.com/eng/images/Icon-font-7-stroke/pe-icon-7-stroke/css/helper.css">    <link href="css/deposit.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <link rel="stylesheet" href="https://cryptoum.com/eng/images/Icon-font-7-stroke/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="https://cryptoum.com/eng/images/Icon-font-7-stroke/pe-icon-7-stroke/css/helper.css"">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+         {% block content %}
+        <div class="col-md-3 left_col menu_fixed mCustomScrollbar _mCS_1 mCS-autoHide">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="https://cryptoum.com/eng/index.php" class="site_title">
+                <i class="fa">
+                  <img src="https://cryptoum.com/eng/images/icon_logo.svg" alt="icon logo"/></i>
+                <span>
+                  <img src="https://cryptoum.com/eng/images/text_logo.svg" alt="logo text">
+                </span>
+              </a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <hr style="margin-top:0px;">
+            
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="https://cryptoum.com/eng/images/user.png" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>mladen</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+        }
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+  <div class="menu_section">
+    <ul class="nav side-menu">
+      
+      <li><a href="index.php"><i class="pe-7s-home pe-2x pe-va"></i>Dashboard</a></li>
+      <li><a href="instabeat.php"><i class="pe-7s-stopwatch pe-2x pe-va"></i>Insta Beat</a></li>
+      
+      <!--li>
+        <a href="#" onclick="return false;"><i class="fa fa-area-chart"></i> Insta Beat</a>
+        <ul class="nav child_menu">
+          <li class="current-page"><a href="#">test</a></li>
+          <li><a href="index2.html">Open Trades</a></li>
+          <li><a href="index3.html">Closed Trades</a></li>
+        </ul>
+      </li-->
+      <li><a href="buycoins.php"><i class="pe-7s-graph1 pe-2x pe-va"></i>Buy / Sell</a></li>
+      <li><a href="deposit.php"><i class="pe-7s-credit pe-2x pe-va"></i>Deposit</a></li>
+      <li><a href="withdraw.php"><i class="pe-7s-cash pe-2x pe-va"></i>Withdraw</a></li>
+      <li><a href="support.php"><i class="pe-7s-help2 pe-2x pe-va"></i>Support</a></li>
+      <li><a href="privacy.php"><i class="pe-7s-bookmarks pe-2x pe-va"></i>Privacy & Terms</a></li>
+
+    </ul>
+  </div>
+
+</div>
+<!-- /sidebar menu -->
+
+<!-- /menu footer buttons -->
+<div class="sidebar-footer hidden-small">
+  <a data-toggle="tooltip" data-placement="top" title="Dashboard" href="index.php">
+    <span class="pe-7s-home" aria-hidden="true"></span>
+  </a>
+  <a data-toggle="tooltip" data-placement="top" title="Instabeat" href="instabeat.php">
+    <span class="pe-7s-stopwatch" aria-hidden="true"></span>
+  </a>
+  <a data-toggle="tooltip" data-placement="top" title="Withdraw Money" href="withdraw.php">
+    <span class="pe-7s-cash" aria-hidden="true"></span>
+  </a>
+  <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.php">
+    <span class="pe-7s-back" aria-hidden="true"></span>
+  </a>
+</div>
+
+
+<!-- /menu footer buttons -->
+            
+          </div>
+        </div>
+
+        <!-- top navigation -->
+<div class="top_nav">
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding no-margin">
+    <div class="nav_menu">
+
+
+      <nav>
+        <div class="nav toggle">
+          <a id="menu_toggle"><i class="pe-7s-menu pe-lg pe-va" style="font-size:31px; color:#455a64;"></i></a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="">
+
+          </li>
+          <li class="">
+            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <img src="images/user.png" alt="">mladen              <span class=" fa fa-angle-down"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-usermenu pull-right">
+              <li><a href="profile.php"><i class="pe-7s-id pull-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;My Profile</a></li>
+              <li><a href="support.php"><i class="pe-7s-help2 pull-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;Support</a></li>
+              <li><a href="{% url 'account_login' %}"><i class="pe-7s-back pull-left"></i>&nbsp;&nbsp;&nbsp;&nbsp;Log Out</a></li>
+            </ul>
+          </li>
+
+          <li role="presentation" class="dropdown">
+            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false" style="height:57px; min-width:50px;">
+              <span class="pe-7s-mail" style="font-size: 30px; line-height: 0px; position:absolute; top:29px; right:15px;"></span>
+              <span class="badge bg-purple">6</span>
+            </a>
+
+            <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+              <li>
+                <a>
+                  <span class="image"><img src="http://cryptoum.com/eng/images/user.png" alt="Profile Image" /></span>
+                  <span>
+                    <span>John Smith</span>
+                    <span class="time">3 mins ago</span>
+                  </span>
+                  <span class="message">
+                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="image"><img src="http://cryptoum.com/eng/images/user.png" alt="Profile Image" /></span>
+                  <span>
+                    <span>John Smith</span>
+                    <span class="time">3 mins ago</span>
+                  </span>
+                  <span class="message">
+                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="image"><img src="http://cryptoum.com/eng/images/user.png" alt="Profile Image" /></span>
+                  <span>
+                    <span>John Smith</span>
+                    <span class="time">3 mins ago</span>
+                  </span>
+                  <span class="message">
+                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="image"><img src="http://cryptoum.com/eng/images/user.png" alt="Profile Image" /></span>
+                  <span>
+                    <span>John Smith</span>
+                    <span class="time">3 mins ago</span>
+                  </span>
+                  <span class="message">
+                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                  </span>
+                </a>
+              </li>
+              <li>
+                <div class="text-center">
+                  <a>
+                    <strong>See All Alerts</strong>
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <p class="balance-top hidden-xs">
+              <span>Balance</span><br/>
+              0&euro;
+            </p>
+          </li>
+        </ul>
+
+
+      </nav>
+
+
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-sm hidden-md hidden-lg no-padding">
+    <div class="balance-mb">
+      <div class="col-xs-4 col-sm-3" style="background-color: white;">
+        <h5 style="text-transform:uppercase; letter-spacing:2px;"><b>Balance</b></h5>
+      </div>
+      <div class="col-xs-8 col-sm-9 cornershadow" style="background-color: white;">
+        <h5>0&euro;</h5> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /top navigation -->
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+           
+
+            <div class="row">
+              <div class="col-md-12">
+                
+                Dashboard
+                
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>{% endblock  %}
+        <!-- /page content -->
+
+        <!-- footer content -->
+<footer>
+  <div class="pull-right">
+    Encrypt Money 2018 &copy; All rights reserved
+  </div>
+  <div class="clearfix"></div>
+</footer>
+<!-- /footer content -->      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="http://cryptoum.com/eng/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="http://cryptoum.com/eng/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="http://cryptoum.com/eng/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="http://cryptoum.com/eng/vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="http://cryptoum.com/eng/vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="http://cryptoum.com/eng/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- Flot -->
+    <script src="http://cryptoum.com/eng/vendors/Flot/jquery.flot.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="http://cryptoum.com/eng/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="http://cryptoum.com/eng/vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="http://cryptoum.com/eng/vendors/moment/min/moment.min.js"></script>
+    <script src="http://cryptoum.com/eng/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="http://cryptoum.com/eng/build/js/custom2.min.js"></script>
+    <script src="http://localhost/static/delwin.js"></script> 
+  </body>
+</html>
