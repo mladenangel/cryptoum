@@ -1,0 +1,329 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wh",
+				"white"
+			],
+			[
+				"backgr",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/templates/app/sidebar.html",
+			"settings":
+			{
+				"buffer_size": 2415,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{% extends \"app/base_site.html\" %}\n\n{% block title %} Dashboard {% endblock title %}\n\n{% block stylesheets %}\n  {{ block.super }}\n{% endblock stylesheets %}\n\n{% block content %}\n  <div class=\"right_col\" role=\"main\">\n    <div class=\"\">\n      <div class=\"row top_tiles\">\n        <div class=\"animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n          <div class=\"tile-stats\">\n            <div class=\"icon\"><i class=\"fa fa-caret-square-o-right\"></i></div>\n            <div class=\"count\">179</div>\n            <h3>New Sign ups</h3>\n            <p>Lorem ipsum psdea itgum rixt.</p>\n          </div>\n        </div>\n        <div class=\"animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n          <div class=\"tile-stats\">\n            <div class=\"icon\"><i class=\"fa fa-comments-o\"></i></div>\n            <div class=\"count\">179</div>\n            <h3>New Sign ups</h3>\n            <p>Lorem ipsum psdea itgum rixt.</p>\n          </div>\n        </div>\n        <div class=\"animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n          <div class=\"tile-stats\">\n            <div class=\"icon\"><i class=\"fa fa-sort-amount-desc\"></i></div>\n            <div class=\"count\">179</div>\n            <h3>New Sign ups</h3>\n            <p>Lorem ipsum psdea itgum rixt.</p>\n          </div>\n        </div>\n        <div class=\"animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12\">\n          <div class=\"tile-stats\">\n            <div class=\"icon\"><i class=\"fa fa-check-square-o\"></i></div>\n            <div class=\"count\">179</div>\n            <h3>New Sign ups</h3>\n            <p>Lorem ipsum psdea itgum rixt.</p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"row\">\n        <div class=\"col-md-12\">\n          <div class=\"x_panel\">\n            <div class=\"x_title\">\n              <h2>Transaction Summary <small>Weekly progress</small></h2>\n              <div class=\"filter\">\n                <div id=\"reportrange\" class=\"pull-right\" style=\"background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc\">\n                  <i class=\"glyphicon glyphicon-calendar fa fa-calendar\"></i>\n                  <span>December 30, 2014 - January 28, 2015</span> <b class=\"caret\"></b>\n                </div>\n              </div>\n              <div class=\"clearfix\"></div>\n            </div>\n            <div class=\"x_content\">\n              <div class=\"col-md-9 col-sm-12 col-xs-12\">\n                <div class=\"demo-container\" style=\"height:280px\">\n                  <div id=\"chart_plot_02\" class=\"demo-placeholder\"></div>\n                </div>\n                <div class=\"tiles\">\n                  <div class=\"col-md-4 tile\">\n                    <span>Total Sessions</span>\n                    <h2>231,809</h2>\n                    <span class=\"sparkline11 graph\" style=\"height: 160px;\">\n                         <canvas width=\"200\" height=\"60\" style=\"display: inline-block; vertical-align: top; width: 94px; height: 30px;\"></canvas>\n                    </span>\n                  </div>\n                  <div class=\"col-md-4 tile\">\n                    <span>Total Revenue</span>\n                    <h2>$231,809</h2>\n                    <span class=\"sparkline22 graph\" style=\"height: 160px;\">\n                          <canvas width=\"200\" height=\"60\" style=\"display: inline-block; vertical-align: top; width: 94px; height: 30px;\"></canvas>\n                    </span>\n                  </div>\n                  <div class=\"col-md-4 tile\">\n                    <span>Total Sessions</span>\n                    <h2>231,809</h2>\n                    <span class=\"sparkline11 graph\" style=\"height: 160px;\">\n                           <canvas width=\"200\" height=\"60\" style=\"display: inline-block; vertical-align: top; width: 94px; height: 30px;\"></canvas>\n                    </span>\n                  </div>\n                </div>\n\n              </div>\n\n              <div class=\"col-md-3 col-sm-12 col-xs-12\">\n                <div>\n                  <div class=\"x_title\">\n                    <h2>Top Profiles</h2>\n                    <ul class=\"nav navbar-right panel_toolbox\">\n                      <li><a class=\"collapse-link\"><i class=\"fa fa-chevron-up\"></i></a>\n                      </li>\n                      <li class=\"dropdown\">\n                        <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\"><i class=\"fa fa-wrench\"></i></a>\n                        <ul class=\"dropdown-menu\" role=\"menu\">\n                          <li><a href=\"#\">Settings 1</a>\n                          </li>\n                          <li><a href=\"#\">Settings 2</a>\n                          </li>\n                        </ul>\n                      </li>\n                      <li><a class=\"close-link\"><i class=\"fa fa-close\"></i></a>\n                      </li>\n                    </ul>\n                    <div class=\"clearfix\"></div>\n                  </div>\n                  <ul class=\"list-unstyled top_profiles scroll-view\">\n                    <li class=\"media event\">\n                      <a class=\"pull-left border-aero profile_thumb\">\n                        <i class=\"fa fa-user aero\"></i>\n                      </a>\n                      <div class=\"media-body\">\n                        <a class=\"title\" href=\"#\">Ms. Mary Jane</a>\n                        <p><strong>$2300. </strong> Agent Avarage Sales </p>\n                        <p> <small>12 Sales Today</small>\n                        </p>\n                      </div>\n                    </li>\n                    <li class=\"media event\">\n                      <a class=\"pull-left border-green profile_thumb\">\n                        <i class=\"fa fa-user green\"></i>\n                      </a>\n                      <div class=\"media-body\">\n                        <a class=\"title\" href=\"#\">Ms. Mary Jane</a>\n                        <p><strong>$2300. </strong> Agent Avarage Sales </p>\n                        <p> <small>12 Sales Today</small>\n                        </p>\n                      </div>\n                    </li>\n                    <li class=\"media event\">\n                      <a class=\"pull-left border-blue profile_thumb\">\n                        <i class=\"fa fa-user blue\"></i>\n                      </a>\n                      <div class=\"media-body\">\n                        <a class=\"title\" href=\"#\">Ms. Mary Jane</a>\n                        <p><strong>$2300. </strong> Agent Avarage Sales </p>\n                        <p> <small>12 Sales Today</small>\n                        </p>\n                      </div>\n                    </li>\n                    <li class=\"media event\">\n                      <a class=\"pull-left border-aero profile_thumb\">\n                        <i class=\"fa fa-user aero\"></i>\n                      </a>\n                      <div class=\"media-body\">\n                        <a class=\"title\" href=\"#\">Ms. Mary Jane</a>\n                        <p><strong>$2300. </strong> Agent Avarage Sales </p>\n                        <p> <small>12 Sales Today</small>\n                        </p>\n                      </div>\n                    </li>\n                    <li class=\"media event\">\n                      <a class=\"pull-left border-green profile_thumb\">\n                        <i class=\"fa fa-user green\"></i>\n                      </a>\n                      <div class=\"media-body\">\n                        <a class=\"title\" href=\"#\">Ms. Mary Jane</a>\n                        <p><strong>$2300. </strong> Agent Avarage Sales </p>\n                        <p> <small>12 Sales Today</small>\n                        </p>\n                      </div>\n                    </li>\n                  </ul>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n\n\n\n      <div class=\"row\">\n        <div class=\"col-md-12\">\n          <div class=\"x_panel\">\n            <div class=\"x_title\">\n              <h2>Weekly Summary <small>Activity shares</small></h2>\n              <ul class=\"nav navbar-right panel_toolbox\">\n                <li><a class=\"collapse-link\"><i class=\"fa fa-chevron-up\"></i></a>\n                </li>\n                <li class=\"dropdown\">\n                  <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\"><i class=\"fa fa-wrench\"></i></a>\n                  <ul class=\"dropdown-menu\" role=\"menu\">\n                    <li><a href=\"#\">Settings 1</a>\n                    </li>\n                    <li><a href=\"#\">Settings 2</a>\n                    </li>\n                  </ul>\n                </li>\n                <li><a class=\"close-link\"><i class=\"fa fa-close\"></i></a>\n                </li>\n              </ul>\n              <div class=\"clearfix\"></div>\n            </div>\n            <div class=\"x_content\">\n\n              <div class=\"row\" style=\"border-bottom: 1px solid #E0E0E0; padding-bottom: 5px; margin-bottom: 5px;\">\n                <div class=\"col-md-7\" style=\"overflow:hidden;\">\n                  <span class=\"sparkline_one\" style=\"height: 160px; padding: 10px 25px;\">\n                                <canvas width=\"200\" height=\"60\" style=\"display: inline-block; vertical-align: top; width: 94px; height: 30px;\"></canvas>\n                            </span>\n                  <h4 style=\"margin:18px\">Weekly sales progress</h4>\n                </div>\n\n                <div class=\"col-md-5\">\n                  <div class=\"row\" style=\"text-align: center;\">\n                    <div class=\"col-md-4\">\n                      <canvas class=\"canvasDoughnut\" height=\"110\" width=\"110\" style=\"margin: 5px 10px 10px 0\"></canvas>\n                      <h4 style=\"margin:0\">Bounce Rates</h4>\n                    </div>\n                    <div class=\"col-md-4\">\n                      <canvas class=\"canvasDoughnut\" height=\"110\" width=\"110\" style=\"margin: 5px 10px 10px 0\"></canvas>\n                      <h4 style=\"margin:0\">New Traffic</h4>\n                    </div>\n                    <div class=\"col-md-4\">\n                      <canvas class=\"canvasDoughnut\" height=\"110\" width=\"110\" style=\"margin: 5px 10px 10px 0\"></canvas>\n                      <h4 style=\"margin:0\">Device Share</h4>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n\n\n      <div class=\"row\">\n        <div class=\"col-md-4\">\n          <div class=\"x_panel\">\n            <div class=\"x_title\">\n              <h2>Top Profiles <small>Sessions</small></h2>\n              <ul class=\"nav navbar-right panel_toolbox\">\n                <li><a class=\"collapse-link\"><i class=\"fa fa-chevron-up\"></i></a>\n                </li>\n                <li class=\"dropdown\">\n                  <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\"><i class=\"fa fa-wrench\"></i></a>\n                  <ul class=\"dropdown-menu\" role=\"menu\">\n                    <li><a href=\"#\">Settings 1</a>\n                    </li>\n                    <li><a href=\"#\">Settings 2</a>\n                    </li>\n                  </ul>\n                </li>\n                <li><a class=\"close-link\"><i class=\"fa fa-close\"></i></a>\n                </li>\n              </ul>\n              <div class=\"clearfix\"></div>\n            </div>\n            <div class=\"x_content\">\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item One Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Two Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Two Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Two Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Three Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4\">\n          <div class=\"x_panel\">\n            <div class=\"x_title\">\n              <h2>Top Profiles <small>Sessions</small></h2>\n              <ul class=\"nav navbar-right panel_toolbox\">\n                <li><a class=\"collapse-link\"><i class=\"fa fa-chevron-up\"></i></a>\n                </li>\n                <li class=\"dropdown\">\n                  <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\"><i class=\"fa fa-wrench\"></i></a>\n                  <ul class=\"dropdown-menu\" role=\"menu\">\n                    <li><a href=\"#\">Settings 1</a>\n                    </li>\n                    <li><a href=\"#\">Settings 2</a>\n                    </li>\n                  </ul>\n                </li>\n                <li><a class=\"close-link\"><i class=\"fa fa-close\"></i></a>\n                </li>\n              </ul>\n              <div class=\"clearfix\"></div>\n            </div>\n            <div class=\"x_content\">\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item One Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Two Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Two Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Two Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Three Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4\">\n          <div class=\"x_panel\">\n            <div class=\"x_title\">\n              <h2>Top Profiles <small>Sessions</small></h2>\n              <ul class=\"nav navbar-right panel_toolbox\">\n                <li><a class=\"collapse-link\"><i class=\"fa fa-chevron-up\"></i></a>\n                </li>\n                <li class=\"dropdown\">\n                  <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\"><i class=\"fa fa-wrench\"></i></a>\n                  <ul class=\"dropdown-menu\" role=\"menu\">\n                    <li><a href=\"#\">Settings 1</a>\n                    </li>\n                    <li><a href=\"#\">Settings 2</a>\n                    </li>\n                  </ul>\n                </li>\n                <li><a class=\"close-link\"><i class=\"fa fa-close\"></i></a>\n                </li>\n              </ul>\n              <div class=\"clearfix\"></div>\n            </div>\n            <div class=\"x_content\">\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item One Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Two Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Two Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Two Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n              <article class=\"media event\">\n                <a class=\"pull-left date\">\n                  <p class=\"month\">April</p>\n                  <p class=\"day\">23</p>\n                </a>\n                <div class=\"media-body\">\n                  <a class=\"title\" href=\"#\">Item Three Title</a>\n                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n                </div>\n              </article>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n{% block javascripts %}\n  {{ block.super}}\n  <!-- Chart.js -->\n  <script src=\"/static/vendors/Chart.js/dist/Chart.min.js\"></script>\n  <!-- gauge.js -->\n  <script src=\"/static/vendors/gauge.js/dist/gauge.min.js\"></script>\n  <!-- Skycons -->\n  <script src=\"/static/vendors/skycons/skycons.js\"></script>\n  <!-- Flot -->\n  <script src=\"/static/vendors/Flot/jquery.flot.js\"></script>\n  <script src=\"/static/vendors/Flot/jquery.flot.pie.js\"></script>\n  <script src=\"/static/vendors/Flot/jquery.flot.time.js\"></script>\n  <script src=\"/static/vendors/Flot/jquery.flot.stack.js\"></script>\n  <script src=\"/static/vendors/Flot/jquery.flot.resize.js\"></script>\n  <!-- Flot plugins -->\n  <script src=\"/static/vendors/flot.orderbars/js/jquery.flot.orderBars.js\"></script>\n  <script src=\"/static/vendors/flot-spline/js/jquery.flot.spline.min.js\"></script>\n  <script src=\"/static/vendors/flot.curvedlines/curvedLines.js\"></script>\n  <!-- DateJS -->\n  <script src=\"/static/vendors/DateJS/build/date.js\"></script>\n  <!-- JQVMap -->\n  <script src=\"/static/vendors/jqvmap/dist/jquery.vmap.js\"></script>\n  <script src=\"/static/vendors/jqvmap/dist/maps/jquery.vmap.world.js\"></script>\n  <script src=\"/static/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js\"></script>\n{% endblock javascripts %}\n",
+			"file": "app/templates/app/index2.html",
+			"file_size": 21165,
+			"file_write_time": 131609648714894758,
+			"settings":
+			{
+				"buffer_size": 21142,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "buysell/templates/buysell.html",
+			"settings":
+			{
+				"buffer_size": 16087,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 341.0,
+		"last_filter": "pa",
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Install Package Control"
+			]
+		],
+		"width": 497.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/root/myproject/cryptoum",
+		"/root/myproject/cryptoum/app",
+		"/root/myproject/cryptoum/app/templates",
+		"/root/myproject/cryptoum/app/templates/app",
+		"/root/myproject/cryptoum/buysell",
+		"/root/myproject/cryptoum/buysell/templates",
+		"/root/myproject/cryptoum/profiles",
+		"/root/myproject/cryptoum/profiles/templates",
+		"/root/myproject/cryptoum/profiles/templates/dashboard"
+	],
+	"file_history":
+	[
+		"/root/myproject/cryptoum/app/templates/app/top_navigation.html",
+		"/root/myproject/cryptoum/cryptoum/settings.py",
+		"/root/myproject/cryptoum/app/templates/app/base_site.html",
+		"/root/myproject/cryptoum/profiles/templates/home.html",
+		"/root/myproject/cryptoum/profiles/templates/profile.html",
+		"/root/myproject/cryptoum/app/templates/app/index2.html",
+		"/root/myproject/cryptoum/profiles/templates/dashboard/topnav.html",
+		"/root/myproject/cryptoum/profiles/templates/base-dashboard.html",
+		"/root/myproject/cryptoum/app/templates/base.html",
+		"/root/myproject/cryptoum/profiles/templates/base.html",
+		"/root/myproject/cryptoum/profiles/templates/dashboard/basedash.html",
+		"/root/myproject/cryptoum/cryptoum/urls.py",
+		"/root/myproject/cryptoum/profiles/templates/dashboard/sidenav.html",
+		"/root/myproject/cryptoum/app/static/vendors/datatables.net-bs/js/dataTables.bootstrap.js",
+		"/root/myproject/cryptoum/app/templates/app/sidebar.html",
+		"/root/myproject/cryptoum/profiles/views.py",
+		"/root/myproject/cryptoum/app/views.py"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/templates/app/sidebar.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								621,
+								621
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/templates/app/index2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19864,
+								19864
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6713.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "buysell/templates/buysell.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16087,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13749,
+								13749
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4883.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ctyptoum.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 277.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
